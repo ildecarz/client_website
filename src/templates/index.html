@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Asesoría Jurídica</title> {% endblock %}
+
+{% block content %}
+ <!-- SECTION -->
+ <section id="header">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 mt-5">
+        <div class="header-content-left">
+          <img src="{{ url_for('static', filename='foto2.jpg')}}" style="width: 100%;">
+        </div>  
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="header-content-right mt-5">
+          <h1 class="display-4">Asesoramiento jurídico</h1>
+          <h2 class="mt-5">Si tines algún inconveniente ya sea laboral, penal, o realizar cualquier procedimeinto administrativo, no dudes en contactarme!</h2>
+          <a href="/form" class="btn btn-outline-secondary header-btn btn-lg mt-2 header-btn">contáctame</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonial">
+  <div class="container">
+    <p class="h2 mb-2my-auto">
+      “La Justicia es la reina de las virtudes republicanas y con ella se sostiene la igualdad y la libertad”.
+    </p>
+    <p class="h4">- SIMON BOLIVAR</p>
+  </div>
+</section>
+
+<section id="info-one">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="info-left">
+          <img src="{{ url_for('static', filename='foto3.jpg')}}" style="width: 100%">
+        </div>
+      </div>
+      <div class="col-md-6 my-auto">
+        <div class="info-right">
+          <h2>Redacción de documentos</h2>
+          <h3>Si necesitas redactar algún documento como permisos, ventas, poderes... Aqui estamos para servirle!</h3>
+          <a href="/form" class="btn btn-outline-secondary btn-lg">contáctame</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info-two" style="background: #f1f1f1;">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-md-6">
+        <h2>Materia Civil:</h2>
+        <ul>
+          <li>Redacción de documentos: Contratos de compra –venta de vehículos, opción de compra –venta de inmuebles. Compra-Venta de Inmuebles.</li>
+          <li>Contratos de arrendamiento, Comodato.</li>
+          <li>Títulos Supletorios.</li>
+          <li>Poder Judicial, Especial y General.</li>
+          <li>Declaraciones Juradas ( Cursos realizados)</li>
+          <li>Cartas de Soltería.</li>
+          <li>Divorcios.</li>
+          <li>Asesoría en Materia de Niños, Niñas y Adolescentes.</li>
+          <li>Permisos de viaje de  Niños, Niñas y Adolescentes.</li>
+          <li>Testamentos.</li>
+          <li>Capitulaciones Matrimoniales.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Materia Penal:</h2>
+        <ul>
+          <li>Redacción de Denuncias y Querellas</li>
+          <li>Atención a las víctimas de Violencia de Género</li>
+          <li>Asistencia y Representación en casos penales en todas sus fases.</li>
+          <li>Asesorías y acompañamiento en el Ministerio Público.</li>     
+        </ul>  
+        </div>
+    </div>
+  </div>
+  
+</section>
+<footer>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col my-auto" style="color: white; text-align: center;">
+        <h1>Abogada Mary Carmen Diaz</h1>
+        <h4>Abogada egresada de la UCV. Trabajé como abogado adjunto III en la Fiscalía Superior de Caracas. En los momentos me encuentro trabajando en libre ejercicio.</h4>
+    </div>
+  </div>
+
+</footer>
+
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Error</title> {% endblock %}
+
+{% block content %}
+
+<br><br>
+
+<footer id="contact">
+    <div class="container">
+        <br><br>
+        <div class="container" style="color:aliceblue">
+        <br><br>
+        <h1>Opss error!</h1>
+        <h3>{{ error }}</h3>
+        <h2 style="text-align: center; color: aliceblue;">Teléfono: (0414)135-8313  ||  Correo: abg.marydiaz@gmail.com</h2>
+    </div>
+        <form class="card my-4" action="/confirmacion" method="POST">
+            <div class="card-body">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" name='nombre' value="{{ nombre }}">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Apellido" name='apellido' value="{{ apellido }}">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" name='email' value="{{ email }}">
+              </div>
+              <div class="form-group">
+                <textarea cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+              </div>
+              <button class="btn btn-secondary btn-block">Enviar</button>
+            </div>
+            <h4 style="text-align: center; "> - Ingresa sus datos y su consulta y nos estaremos comunicando con ud</h4>
+            <h4 style="text-align: center; "> - Incluya número de telefono en el mensaje</h4>
+        </form>
+        <a href="/" type="button" class="btn btn-primary btn-light my-4">Volver</a>
+    </div>
+  </footer>
+{% endblock %}
